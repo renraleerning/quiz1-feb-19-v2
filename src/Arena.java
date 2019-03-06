@@ -6,6 +6,7 @@
 public class Arena {
     private Robot robot1;
     private Robot robot2;
+    String pemenang;
 
     public void tambahRobot(Robot r1,Robot r2) {
         robot1 = r1;
@@ -13,10 +14,12 @@ public class Arena {
     }
 
     public void bertanding() {
+
         //UI sederhana untuk pertandingan
 
         //loop sampai salah satu robot habis skor kesehatannya
         boolean isSelesai = false;
+
 
         //LENGKAPI dengan NIM dan NAMA
         System.out.println("Saya berjanji tdk berbuat curang dan/atau membantu orang lain berbuat curang");
@@ -30,6 +33,7 @@ public class Arena {
         Robot robotPasif = robot2;
 
         while (!isSelesai) {
+
             System.out.println("");
             System.out.println("Giliran robot:"+robotAktif.nama);
             System.out.println("Robot menyerang dengan senjata ["+robotAktif.oSenjata.nama+"]");
@@ -44,8 +48,14 @@ public class Arena {
 
             //stop jika salah satu robot skor kesehatanya nol
             isSelesai = (robotAktif.kesehatan<=0 || robotPasif.kesehatan<=0);
+            if (robotAktif.kesehatan>0){
+                pemenang=robotAktif.nama;
+            }else {
+                pemenang=robotPasif.nama;
+            }
         }
-        System.out.println("Pertandingan Selesai");
+        System.out.println("Pertandingan Selesai dan dimenangkan oleh " + pemenang);
+
 
         //cek pemenang
         //lengkapi
