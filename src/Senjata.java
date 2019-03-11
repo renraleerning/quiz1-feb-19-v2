@@ -5,6 +5,7 @@
 
 public class Senjata {
     int kekuatan; //skor yang mengurangi kesehatan lawan
+    int reflect; //skor dmg timbal balik dari serangan
     String nama;
 
 }

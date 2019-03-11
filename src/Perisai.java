@@ -12,9 +12,9 @@
 
 public class Perisai {
     //lengkapi
-    int kekuatan;
-    int durability;
-    int tipe;
-    int EX; //penggunaan EX adalah EX/100 dari serangan lawan untuk damage yang dikembalikan ke lawan
     String nama;
+    int kekuatan;
+    int dura;
+    int tipe;
+    int EX=0;
 }

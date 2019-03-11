@@ -4,6 +4,6 @@
 public class SenjataKilat extends  Senjata {
     //constructor
     public SenjataKilat() {
-        kekuatan = 40; nama ="Senjata_Kilat";
+        kekuatan = 70; nama ="Senjata_Kilat";reflect=20;
     }
 }

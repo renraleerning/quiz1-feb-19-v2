@@ -2,8 +2,6 @@
 
 public class PerisaiImortal extends Perisai {
     public PerisaiImortal() {
-        kekuatan = 20;
-        nama ="Perisai_Infinity";
-        tipe = 2;
+        kekuatan = 90;nama ="Perisai_Imortal";tipe = 2;dura= 1;
     }
 }
