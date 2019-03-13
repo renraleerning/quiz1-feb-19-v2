@@ -50,6 +50,7 @@ public class Robot {
         System.out.println("Menyerang dengan senjata "+oSenjata[senjatake].nama+" dmg : "+oSenjata[senjatake].kekuatan);
         if(rLawan.oPerisai[perisaike].dura>0){
             System.out.print("Ditahan dengan perisai "+rLawan.oPerisai[perisaike].nama);
+            rLawan.oPerisai[perisaike].dura--;
             switch (rLawan.oPerisai[perisaike].tipe){ //pengurangan kesehatan robot berdasarkan tipe perisai lawan
                 case 1:
                     deff = oSenjata[senjatake].kekuatan - rLawan.oPerisai[perisaike].kekuatan;
